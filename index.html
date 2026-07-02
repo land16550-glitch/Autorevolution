@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoRevolution - Gestión Automotriz</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>AutoRevolution</h1>
+      <p>Plataforma web para gestión de servicios automotrices</p>
+    </div>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#clientes">Clientes</a>
+      <a href="#vehiculos">Vehículos</a>
+      <a href="#citas">Citas</a>
+      <a href="#mantenimiento">Mantenimiento</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="panel hero">
+      <h2>Panel Principal</h2>
+      <p>AutoRevolution ayuda a talleres y negocios automotrices a registrar clientes, vehículos, citas e historial de mantenimiento de forma organizada.</p>
+      <div class="stats">
+        <div class="stat"><span id="totalClientes">0</span><small>Clientes</small></div>
+        <div class="stat"><span id="totalVehiculos">0</span><small>Vehículos</small></div>
+        <div class="stat"><span id="totalCitas">0</span><small>Citas</small></div>
+        <div class="stat"><span id="totalMantenimientos">0</span><small>Mantenimientos</small></div>
+      </div>
+    </section>
+
+    <section id="clientes" class="panel">
+      <h2>Registro de Clientes</h2>
+      <form id="formCliente" class="form-grid">
+        <input type="text" id="clienteNombre" placeholder="Nombre del cliente" required>
+        <input type="text" id="clienteTelefono" placeholder="Teléfono" required>
+        <input type="email" id="clienteCorreo" placeholder="Correo electrónico">
+        <input type="text" id="clienteDireccion" placeholder="Dirección">
+        <button type="submit">Guardar Cliente</button>
+      </form>
+      <div id="listaClientes" class="listado"></div>
+    </section>
+
+    <section id="vehiculos" class="panel">
+      <h2>Registro de Vehículos</h2>
+      <form id="formVehiculo" class="form-grid">
+        <input type="text" id="vehiculoMarca" placeholder="Marca" required>
+        <input type="text" id="vehiculoModelo" placeholder="Modelo" required>
+        <input type="number" id="vehiculoAnio" placeholder="Año">
+        <input type="text" id="vehiculoPlaca" placeholder="Placa" required>
+        <input type="text" id="vehiculoPropietario" placeholder="Propietario" required>
+        <button type="submit">Guardar Vehículo</button>
+      </form>
+      <div id="listaVehiculos" class="listado"></div>
+    </section>
+
+    <section id="citas" class="panel">
+      <h2>Gestión de Citas</h2>
+      <form id="formCita" class="form-grid">
+        <input type="text" id="citaCliente" placeholder="Cliente" required>
+        <input type="text" id="citaVehiculo" placeholder="Vehículo / Placa" required>
+        <input type="date" id="citaFecha" required>
+        <input type="time" id="citaHora" required>
+        <input type="text" id="citaServicio" placeholder="Servicio solicitado" required>
+        <button type="submit">Guardar Cita</button>
+      </form>
+      <div id="listaCitas" class="listado"></div>
+    </section>
+
+    <section id="mantenimiento" class="panel">
+      <h2>Historial de Mantenimiento</h2>
+      <form id="formMantenimiento" class="form-grid">
+        <input type="text" id="mantVehiculo" placeholder="Vehículo / Placa" required>
+        <input type="date" id="mantFecha" required>
+        <input type="text" id="mantDescripcion" placeholder="Descripción del servicio" required>
+        <input type="number" id="mantCosto" placeholder="Costo RD$">
+        <button type="submit">Guardar Mantenimiento</button>
+      </form>
+      <div id="listaMantenimientos" class="listado"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Proyecto Final - Seminario de Proyecto I - UAPA</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

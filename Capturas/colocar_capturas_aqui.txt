@@ -1,0 +1,9 @@
+Colocar en esta carpeta las capturas reales del proyecto:
+
+- Portada_Proyecto.png
+- Panel_Principal.png
+- Clientes.png
+- Vehiculos.png
+- Citas.png
+- Mantenimiento.png
+- GitHub_Repositorio.png
