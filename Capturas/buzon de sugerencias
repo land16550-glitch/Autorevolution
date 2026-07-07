@@ -1,0 +1,38 @@
+.sugerencias{
+    max-width:600px;
+    margin:30px auto;
+    padding:25px;
+    background:#fff;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.sugerencias h2{
+    color:#ff6b00;
+    text-align:center;
+}
+
+.sugerencias input,
+.sugerencias textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ddd;
+    border-radius:8px;
+    font-size:16px;
+}
+
+.sugerencias button{
+    width:100%;
+    padding:12px;
+    background:#ff6b00;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.sugerencias button:hover{
+    background:#e65c00;
+    
